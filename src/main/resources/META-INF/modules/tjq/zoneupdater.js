@@ -1,4 +1,4 @@
-define([ "t5/core/dom", "t5/core/zone", "t5/core/events" ], function(dom, zone, events) {
+define(['t5/core/dom', 't5/core/zone', 't5/core/events'], function(dom, zone, events) {
     return function(spec) {
 
         var element = dom.wrap(spec.elementId),
@@ -6,7 +6,7 @@ define([ "t5/core/dom", "t5/core/zone", "t5/core/events" ], function(dom, zone, 
             z,
             updateZone;
 
-        element.attr("data-update-zone", spec.zone);
+        element.attr('data-update-zone', spec.zone);
 
         z = zone.findZone(element);
 
